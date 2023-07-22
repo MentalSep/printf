@@ -28,6 +28,6 @@ void _putchar(char c, int *count)
 		write(STDOUT_FILENO, StBuff, i);
 		i = 0;
 	}
-	else if (c)
+	else
 		StBuff[i++] = c;
 }
