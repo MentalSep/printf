@@ -35,5 +35,6 @@ void hex_helper(unsigned long int number, char *base, int *count);
 void non_printable(va_list args, int *count);
 void print_address(va_list args, int *count);
 void print_reverse(va_list args, int *count);
+void print_rot13(va_list args, int *count);
 
 #endif

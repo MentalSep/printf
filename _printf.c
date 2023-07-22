@@ -37,7 +37,7 @@ int _printf(const char *format, ...)
 		{'u', print_unsigned}, {'o', print_octal},
 		{'x', print_lHex}, {'X', print_uHex},
 		{'S', non_printable}, {'p', print_address},
-		{'r', print_reverse},
+		{'r', print_reverse}, {'R', print_rot13},
 		{0, NULL}
 	};
 
