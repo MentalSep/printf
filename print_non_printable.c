@@ -18,7 +18,7 @@ void non_printable(va_list args, int *count)
 			_putchar(str[i], count);
 		else
 		{
-			_puts("\\x0", count);
+			str[i] > 16 ?  _puts("\\x", count) : _puts("\\x0", count);
 			hex_helper(str[i], "0123456789ABCDEF", count);
 		}
 	}
