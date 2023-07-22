@@ -24,6 +24,8 @@ void _putchar(char c, int *count)
 
 	if (i >= BUFFER_SIZE || c == FLUSH_TRIGGER)
 	{
+		if (c != FLUSH_TRIGGER)
+			StBuff[i++] = c;
 		*count += i;
 		write(STDOUT_FILENO, StBuff, i);
 		i = 0;
