@@ -4,7 +4,7 @@
  * hex_helper -
  *
  */
-void hex_helper(unsigned int number, char *base, int *count)
+void hex_helper(unsigned long int number, char *base, int *count)
 {
 	if (number / 16)
 		hex_helper(number / 16, base, count);

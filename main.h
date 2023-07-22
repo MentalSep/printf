@@ -31,7 +31,8 @@ void print_unsigned(va_list args, int *count);
 void print_octal(va_list args, int *count);
 void print_lHex(va_list args, int *count);
 void print_uHex(va_list args, int *count);
-void hex_helper(unsigned int number, char *base, int *count);
+void hex_helper(unsigned long int number, char *base, int *count);
 void non_printable(va_list args, int *count);
+void print_address(va_list args, int *count);
 
 #endif

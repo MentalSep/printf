@@ -9,7 +9,7 @@
  */
 int valid_spec(char c)
 {
-	char *s = "%csdibuoxXS";
+	char *s = "%csdibuoxXSprR";
 	int i;
 
 	for (i = 0; s[i]; i++)
@@ -36,7 +36,7 @@ int _printf(const char *format, ...)
 		{'i', print_int}, {'b', print_binary},
 		{'u', print_unsigned}, {'o', print_octal},
 		{'x', print_lHex}, {'X', print_uHex},
-		{'S', non_printable},
+		{'S', non_printable}, {'p', print_address},
 		{0, NULL}
 	};
 
