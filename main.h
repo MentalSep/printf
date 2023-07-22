@@ -24,5 +24,9 @@ void print_string(va_list args, int *count);
 void print_percent(va_list args, int *count);
 void print_int(va_list args, int *count);
 void print_binary(va_list args, int *count);
+void print_unsigned(va_list args, int *count);
+void print_octal(va_list args, int *count);
+void print_lHex(va_list args, int *count);
+void print_uHex(va_list args, int *count);
 
 #endif

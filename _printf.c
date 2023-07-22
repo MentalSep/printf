@@ -31,12 +31,11 @@ int _printf(const char *format, ...)
 	va_list args;
 	int i, j, count = 0;
 	spec_t types[] = {
-		{'c', print_char},
-		{'s', print_string},
-		{'%', print_percent},
-		{'d', print_int},
-		{'i', print_int},
-		{'b', print_binary},
+		{'c', print_char}, {'s', print_string},
+		{'%', print_percent}, {'d', print_int},
+		{'i', print_int}, {'b', print_binary},
+		{'u', print_unsigned}, {'o', print_octal},
+		{'x', print_lHex}, {'X', print_uHex},
 		{0, NULL}
 	};
 
