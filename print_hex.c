@@ -8,7 +8,7 @@ void hex_helper(unsigned int number, char *base, int *count)
 {
 	if (number / 16)
 		hex_helper(number / 16, base, count);
-	_putchar(base[number % 16] + '0', count);
+	_putchar(base[number % 16], count);
 }
 
 /**

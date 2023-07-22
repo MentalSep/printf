@@ -21,6 +21,7 @@ typedef struct specifier
 
 int _printf(const char *format, ...);
 void _putchar(char c, int *count);
+void _puts(char *s, int *count);
 void print_char(va_list args, int *count);
 void print_string(va_list args, int *count);
 void print_percent(va_list args, int *count);
@@ -30,5 +31,7 @@ void print_unsigned(va_list args, int *count);
 void print_octal(va_list args, int *count);
 void print_lHex(va_list args, int *count);
 void print_uHex(va_list args, int *count);
+void hex_helper(unsigned int number, char *base, int *count);
+void non_printable(va_list args, int *count);
 
 #endif
