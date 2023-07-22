@@ -10,10 +10,7 @@ void print_reverse(va_list args, int *count)
 	int i = 0;
 
 	if (!s)
-	{
-		_puts("(null)", count);
 		return;
-	}
 	while (s[i])
 		i++;
 

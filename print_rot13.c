@@ -10,10 +10,7 @@ void print_rot13(va_list args, int *count)
 	int i;
 
 	if (!str)
-	{
-		_puts("(null)", count);
 		return;
-	}
 
 	for (i = 0; str[i]; i++)
 	{
