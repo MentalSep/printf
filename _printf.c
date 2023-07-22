@@ -54,6 +54,11 @@ int _printf(const char *format, ...)
 				if (format[i] == types[j].specifier)
 					types[j].f(args, &count);
 		}
+		else if (format[i] == '%' && !format[i + 1])
+		{
+			_putchar(FLUSH_TRIGGER, &count);
+			return (-1);
+		}
 		else
 			_putchar(format[i], &count);
 	}
