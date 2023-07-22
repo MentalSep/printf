@@ -22,7 +22,7 @@ void _putchar(char c, int *count)
 	static int i;
 	static char StBuff[BUFFER_SIZE];
 
-	if (i == BUFFER_SIZE || c == FLUSH_TRIGGER)
+	if (i >= BUFFER_SIZE || c == FLUSH_TRIGGER)
 	{
 		*count += i;
 		write(STDOUT_FILENO, StBuff, i);
