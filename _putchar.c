@@ -8,6 +8,15 @@
  */
 void _putchar(char c, int *count)
 {
-	write(STDOUT_FILENO, &c, 1);
-	*count += 1;
+	static int i;
+	static char StBuff[BUFFER_SIZE];
+
+	if (i >= BUFFER_SIZE || c == FLUSH_TRIGGER)
+	{
+		*count += i;
+		write(STDOUT_FILENO, StBuff, i);
+		i = 0;
+	}
+	else
+		StBuff[i++] = c;
 }

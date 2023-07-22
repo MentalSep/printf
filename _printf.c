@@ -55,5 +55,6 @@ int _printf(const char *format, ...)
 		else
 			_putchar(format[i], &count);
 	}
+	_putchar(FLUSH_TRIGGER, &count);
 	return (count);
 }

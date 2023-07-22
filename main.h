@@ -4,6 +4,8 @@
 #include <unistd.h>
 #include <stdarg.h>
 
+#define BUFFER_SIZE 1024
+#define FLUSH_TRIGGER -1
 
 /**
  * struct specifier - each format specifier with it's function
