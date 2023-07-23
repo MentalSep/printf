@@ -1,8 +1,12 @@
 #include "main.h"
 
+
 /**
- * print_rot13 -
+ * print_rot13 - Print a string using the ROT13 cipher.
  *
+ * @args: A va_list of arguments.
+ * @count: A pointer to an integer to keep track of
+ *		the number of characters printed.
  */
 void print_rot13(va_list args, int *count)
 {

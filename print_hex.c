@@ -1,8 +1,12 @@
 #include "main.h"
 
 /**
- * hex_helper -
+ * hex_helper - a fonction that convert a number to its hexadecimal format
+ *	and prints it.
  *
+ * @number: number to be converted
+ * @base: character of hex digits
+ * @count: number of character printed
  */
 void hex_helper(unsigned long int number, char *base, int *count)
 {
@@ -12,8 +16,11 @@ void hex_helper(unsigned long int number, char *base, int *count)
 }
 
 /**
- * print_lhex -
+ * print_lHex - a fonction responsible for printing an unsigned integer
+ *			in lowercase hexadecimal format
  *
+ * @args: A va_list of arguments
+ * @count: number of character printed
  */
 void print_lHex(va_list args, int *count)
 {
@@ -22,10 +29,11 @@ void print_lHex(va_list args, int *count)
 
 	hex_helper(n, base, count);
 }
-
 /**
- * print_uHex -
- *
+ * print_uHex - a fonction responsible for printing an unsigned integer
+ *			in uppercase hexadecimal format
+ * @args: A va_list of arguments.
+ * @count: number of character printed
  */
 void print_uHex(va_list args, int *count)
 {

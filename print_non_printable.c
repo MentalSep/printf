@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * non_printable -
+ * non_printable - a fonction that prints a string with
+ *			non-printable characters
  *
+ * @args: A va_list of arguments
+ * @count: number of characters
  */
 void non_printable(va_list args, int *count)
 {

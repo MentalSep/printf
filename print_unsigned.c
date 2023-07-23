@@ -1,8 +1,11 @@
 #include "main.h"
 
 /**
- * unsigned_helper -
+ * unsigned_helper - Helper function to print an unsigned integer.
  *
+ * @number: The unsigned integer to be printed.
+ * @count: A pointer to an integer to keep track of
+ *		the number of characters printed.
  */
 void unsigned_helper(unsigned int number, int *count)
 {
@@ -12,8 +15,11 @@ void unsigned_helper(unsigned int number, int *count)
 }
 
 /**
- * print_unsigned -
+ * print_unsigned - Print an unsigned integer.
  *
+ * @args: A va_list of arguments.
+ * @count: A pointer to an integer to keep track of
+ *		the number of characters printed.
  */
 void print_unsigned(va_list args, int *count)
 {
