@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * puts -
+ * _puts - a fonction that print a string
  *
+ * @s: string input
+ * @count: number of characters
  */
 void _puts(char *s, int *count)
 {
