@@ -3,7 +3,7 @@
 
 /**
  * octal_helper - Helper function to print an unsigned integer
- * 			in octal format.
+ *			in octal format.
  *
  * @number: The unsigned integer to be printed in octal format.
  * @count: A pointer to an integer to keep track of
